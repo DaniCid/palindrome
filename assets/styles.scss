@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+@import 'variables';
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background: $base-color;
+    color: $white;
+    font-family: $main-font;
+}
+
+h2
+{
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
+
+input
+{
+    border: none;
+    color: $black;
+    font-family: $source;
+    padding: 5px;
+    
+    &:focus
+    {
+        outline: none;
+    }
+}
+
+.flex-wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    margin: 0 auto;
+    width: 700px;
+    
+    .exercise
+    {
+        margin: 30px auto;
+        width: 300px;
+        height: 150px;
+        
+        &__container
+        {
+            align-items: center;
+            background: $white;
+            display: flex;
+            height: 100px;
+            justify-content: space-evenly;
+            
+            #inPalindrome
+            {
+                border-bottom: 3px solid $aqua;
+            }
+        }
+        
+        &__icon
+        {
+            height: 70px;
+            width: 70px;
+            
+            .icon 
+            {
+                font-size: 40px;
+                font-weight: 300;
+                margin: 15px;
+            }
+
+            #iconPalindrome
+            {
+                color: $aqua;
+            }
+        }
+        
+        #titlePalindrome
+        {
+            &::first-letter
+            {
+                color: $aqua;
+            }
+        }
+    }
+}
